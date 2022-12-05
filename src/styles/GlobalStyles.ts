@@ -6,6 +6,7 @@ export const GlobaStyles = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     font-family: Poppins, sans-serif;
+    color:white
   }
   a{
     text-decoration: none;
@@ -18,5 +19,7 @@ export const GlobaStyles = createGlobalStyle`
 export const AppContainer = styled.section`
   width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  /* justify-content: center; */
+  background: ${(props) => props.theme['gray-900']};
 `

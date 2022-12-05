@@ -1,5 +1,6 @@
 import { createBrowserRouter, Link, RouterProvider } from 'react-router-dom'
 import { ThemeProvider } from 'styled-components'
+import { Footer } from './components/Footer'
 import { Navbar } from './components/Navbar'
 import { ErrorPage } from './pages/ErrorPage/indes'
 import { Home } from './pages/Home'
@@ -20,6 +21,7 @@ function App() {
 
         <Navbar />
         <RouterProvider router={router} />
+        <Footer />
       </AppContainer>
     </ThemeProvider>
   )

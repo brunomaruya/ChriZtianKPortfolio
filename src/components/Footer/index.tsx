@@ -19,7 +19,7 @@ export const Footer = () => {
         <CollumnsContainer>
           <Collumn>
             <h1>ChriZtianK</h1>
-            <p>Hello, I`m ChriZtianK and I`m a photographer</p>
+            <p>Hello, I&apos;m ChriZtianK and I&apos;m a photographer</p>
           </Collumn>
           <Collumn>
             <h1>Navigation</h1>

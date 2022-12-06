@@ -11,4 +11,5 @@ export const defaultTheme = {
   'gray-900': '#121214',
 
   'max-width': '1560px',
+  'navbar-height': '104px',
 } as const

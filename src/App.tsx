@@ -2,6 +2,7 @@ import { createBrowserRouter, Link, RouterProvider } from 'react-router-dom'
 import { ThemeProvider } from 'styled-components'
 import { Footer } from './components/Footer'
 import { Navbar } from './components/Navbar'
+import { About } from './pages/About'
 import { ErrorPage } from './pages/ErrorPage/indes'
 import { Home } from './pages/Home'
 import { AppContainer, GlobaStyles } from './styles/GlobalStyles'
@@ -12,6 +13,10 @@ function App() {
       path: '/',
       element: <Home />,
       errorElement: <ErrorPage />,
+    },
+    {
+      path: '/about',
+      element: <About />,
     },
   ])
   return (

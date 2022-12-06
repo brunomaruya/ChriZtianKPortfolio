@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 export const NavbarContainerContainer = styled.div`
+  height: ${(props) => props.theme['navbar-height']};
   width: 100%;
   display: flex;
   justify-content: center;

@@ -18,7 +18,9 @@ export const Navbar = () => {
   return (
     <NavbarContainerContainer background={background}>
       <NavbarContainer>
-        <span>ChriZtianK</span>
+        <span>
+          <a href="/">ChriZtianK</a>
+        </span>
         <LinksContainer>
           <li>
             <a href="/">Home</a>

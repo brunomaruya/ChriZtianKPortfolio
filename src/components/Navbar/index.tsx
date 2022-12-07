@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link, NavLink } from 'react-router-dom'
 import {
   LinksContainer,
   NavbarContainer,
@@ -23,16 +24,36 @@ export const Navbar = () => {
         </span>
         <LinksContainer>
           <li>
-            <a href="/">Home</a>
+            <NavLink
+              to={`/`}
+              className={({ isActive }) => (isActive ? 'active' : '')}
+            >
+              Home
+            </NavLink>
           </li>
           <li>
-            <a href="/about">About</a>
+            <NavLink
+              to={`/about`}
+              className={({ isActive }) => (isActive ? 'active' : '')}
+            >
+              About
+            </NavLink>
           </li>
           <li>
-            <a href="/portfolio">Portfolio</a>
+            <NavLink
+              to={`/portfolio`}
+              className={({ isActive }) => (isActive ? 'active' : '')}
+            >
+              Portfolio
+            </NavLink>
           </li>
           <li>
-            <a href="/contact">Contact me</a>
+            <NavLink
+              to={`/contact`}
+              className={({ isActive }) => (isActive ? 'active' : '')}
+            >
+              Contact me
+            </NavLink>
           </li>
         </LinksContainer>
       </NavbarContainer>

@@ -1,33 +1,38 @@
-import { createBrowserRouter, Link, RouterProvider } from 'react-router-dom'
+import {
+  BrowserRouter,
+  createBrowserRouter,
+  Link,
+  Route,
+  RouterProvider,
+  Routes,
+} from 'react-router-dom'
 import { ThemeProvider } from 'styled-components'
 import { Footer } from './components/Footer'
 import { Navbar } from './components/Navbar'
 import { About } from './pages/About'
+import { Contact } from './pages/Contact'
 import { ErrorPage } from './pages/ErrorPage/indes'
 import { Home } from './pages/Home'
 import { AppContainer, GlobaStyles } from './styles/GlobalStyles'
 import { defaultTheme } from './styles/themes/default'
 function App() {
-  const router = createBrowserRouter([
-    {
-      path: '/',
-      element: <Home />,
-      errorElement: <ErrorPage />,
-    },
-    {
-      path: '/about',
-      element: <About />,
-    },
-  ])
   return (
     <ThemeProvider theme={defaultTheme}>
-      <AppContainer>
-        <GlobaStyles />
+      <BrowserRouter>
+        <AppContainer>
+          <GlobaStyles />
 
-        <Navbar />
-        <RouterProvider router={router} />
-        <Footer />
-      </AppContainer>
+          <Navbar />
+
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+
+          <Footer />
+        </AppContainer>
+      </BrowserRouter>
     </ThemeProvider>
   )
 }

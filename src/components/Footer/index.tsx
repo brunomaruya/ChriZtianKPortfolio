@@ -42,9 +42,6 @@ export const Footer = () => {
             <h1>Information</h1>
             <ul>
               <li>
-                <Phone /> 090 6390 2020
-              </li>
-              <li>
                 <EnvelopeSimple />
                 christiankenji2003394@gmail.com
               </li>

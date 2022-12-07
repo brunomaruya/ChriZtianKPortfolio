@@ -6,12 +6,7 @@ export const About = () => {
     <AboutContainer>
       <AboutWrapper>
         <h1>About</h1>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur
-          provident eius, iusto mollitia odit autem, esse nobis fugiat quis a
-          maiores! Quis explicabo excepturi officia inventore cum adipisci sint?
-          Minima?
-        </p>
+        <p>yo no se</p>
       </AboutWrapper>
       <img src={img} alt="" />
     </AboutContainer>

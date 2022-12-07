@@ -6,7 +6,9 @@ export const GlobaStyles = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     font-family: Poppins, sans-serif;
-    color:white
+    color:white;
+    -webkit-font-smoothing: antialiased;
+
   }
   a{
     text-decoration: none;
@@ -17,9 +19,11 @@ export const GlobaStyles = createGlobalStyle`
   }
 `
 export const AppContainer = styled.section`
+  min-height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
+  position: relative;
   background: ${(props) => props.theme['gray-900']};
 `

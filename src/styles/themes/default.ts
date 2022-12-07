@@ -12,4 +12,5 @@ export const defaultTheme = {
 
   'max-width': '1560px',
   'navbar-height': '104px',
+  'footer-height': '250px',
 } as const

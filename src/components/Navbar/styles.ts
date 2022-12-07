@@ -8,6 +8,12 @@ export const NavbarContainerContainer = styled.div`
   position: fixed;
   z-index: 2;
   background: ${(props) => props.background || 'transparent'};
+  .active {
+    color: ${(props) => props.theme.blue};
+  }
+  .not-active {
+    color: white;
+  }
 `
 export const NavbarContainer = styled.nav`
   display: flex;

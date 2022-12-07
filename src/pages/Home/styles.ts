@@ -3,9 +3,10 @@ import chrisImg from '../../../public/assets/christian.jpg'
 
 export const HomeContainer = styled.section`
   width: 100%;
+  padding-bottom: calc(${(props) => props.theme['navbar-height']} + 10rem);
 `
 export const HomeWrapper = styled.div`
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;

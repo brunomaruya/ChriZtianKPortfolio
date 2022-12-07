@@ -2,6 +2,9 @@ import styled from 'styled-components'
 
 export const FooterContainer = styled.footer`
   width: 100%;
+  height: ${(props) => props.theme['footer-height']};
+  position: absolute;
+  bottom: 0;
   display: flex;
   justify-content: center;
   /* background: ${(props) => props.theme['gray-900']}; */

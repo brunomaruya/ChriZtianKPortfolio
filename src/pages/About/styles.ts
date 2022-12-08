@@ -19,6 +19,7 @@ export const AboutContainer = styled.section`
 export const AboutWrapper = styled.div`
   h1 {
     margin-bottom: 3rem;
-    font-size: 4rem;
+    font-size: 3rem;
+    font-weight: 500;
   }
 `

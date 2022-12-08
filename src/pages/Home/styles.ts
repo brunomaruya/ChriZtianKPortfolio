@@ -49,14 +49,15 @@ export const ButtonsContainer = styled.div`
 `
 
 export const Button = styled.button`
-  width: 8rem;
+  width: 9rem;
   padding: 0.5rem 1rem;
   background: transparent;
-  border: 2px solid ${(props) => props.theme.blue};
+  border: 3px solid ${(props) => props.theme.blue};
   outline: 0;
   border-radius: 30px;
   transition: 0.3s background;
   a {
+    font-size: 1rem;
     color: ${(props) => props.theme.blue};
     transition: 0.3s color;
   }

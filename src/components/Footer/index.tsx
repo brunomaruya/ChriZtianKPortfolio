@@ -50,13 +50,13 @@ export const Footer = () => {
           <Collumn>
             <ul>
               <li>
-                <InstagramLogo />
+                <InstagramLogo /> christian_ks21
               </li>
               <li>
-                <FacebookLogo />
+                <FacebookLogo /> Christian Kenji
               </li>
               <li>
-                <YoutubeLogo />
+                <YoutubeLogo /> ChriZtianK
               </li>
             </ul>
           </Collumn>

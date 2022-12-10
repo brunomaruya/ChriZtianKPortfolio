@@ -8,6 +8,7 @@ export const NavbarContainerContainer = styled.div`
   position: fixed;
   z-index: 2;
   background: ${(props) => props.background || 'transparent'};
+  transition: background-color 0.5s;
   .active {
     color: ${(props) => props.theme.blue};
   }

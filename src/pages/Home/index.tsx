@@ -7,6 +7,7 @@ import {
   LastWorksWrapper,
 } from './styles'
 import imgData from '../../data/images.json'
+
 export const Home = () => {
   return (
     <HomeContainer>

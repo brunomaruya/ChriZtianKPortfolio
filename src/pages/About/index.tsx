@@ -1,5 +1,5 @@
 import { AboutContainer, AboutWrapper } from './styles'
-import img from '../../../public/assets/pato.jpg'
+import img from '../../../public/assets/christian.jpg'
 
 export const About = () => {
   return (

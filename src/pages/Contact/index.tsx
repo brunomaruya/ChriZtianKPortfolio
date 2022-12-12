@@ -1,8 +1,8 @@
 import { EnvelopeSimple, FacebookLogo, InstagramLogo } from 'phosphor-react'
+import React, { useState } from 'react'
 
 import emailjs from '@emailjs/browser'
 
-import React, { useRef, useState } from 'react'
 import {
   ContactContainer,
   InformationContainer,
@@ -10,10 +10,11 @@ import {
 } from './styles'
 
 export const Contact = () => {
-  const form = useRef()
+  // const form = useRef()
+  const form = React.useRef<HTMLFormElement>()
   const [result, showResult] = useState(false)
 
-  const sendEmail = (e) => {
+  const sendEmail = (e: React.ChangeEvent<HTMLInputElement>) => {
     e.preventDefault()
 
     emailjs
@@ -70,8 +71,8 @@ export const Contact = () => {
             <textarea
               name="message"
               id=""
-              cols="30"
-              rows="10"
+              cols={30}
+              rows={10}
               placeholder="Enter Your Message"
             ></textarea>
             {result ? (

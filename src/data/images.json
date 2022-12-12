@@ -22,5 +22,29 @@
   {
     "id": 6,
     "imgUrl":"../../public/assets/papel.jpg"
+  },
+  {
+    "id": 7,
+    "imgUrl":"../../public/assets/7.jpg"
+  },
+  {
+    "id": 8,
+    "imgUrl":"../../public/assets/8.jpg"
+  },
+  {
+    "id": 9,
+    "imgUrl":"../../public/assets/9.jpg"
+  },
+  {
+    "id": 10,
+    "imgUrl":"../../public/assets/10.jpg"
+  },
+  {
+    "id": 11,
+    "imgUrl":"../../public/assets/11.jpg"
+  },
+  {
+    "id": 12,
+    "imgUrl":"../../public/assets/12.jpg"
   }
 ]

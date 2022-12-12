@@ -7,12 +7,13 @@ export const AboutContainer = styled.section`
   display: flex;
   justify-content: space-between;
   gap: 10rem;
-  padding: 3rem;
+  padding: 0 3rem 3rem;
   margin: auto;
   margin-top: ${(props) => props.theme['navbar-height']};
   padding-bottom: ${(props) => props.theme['footer-height']};
   /* padding-bottom: 50rem; */
   img {
+    width: 50%;
     object-fit: cover;
   }
 `

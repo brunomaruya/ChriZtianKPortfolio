@@ -13,6 +13,9 @@ export const PortfolioContainer = styled.section`
     font-size: 3rem;
     font-weight: 500;
   }
+  @media (max-width: 768px) {
+    margin-bottom: calc(${(props) => props.theme['footer-height']} + 5rem);
+  }
 `
 export const FullImage = styled.div`
   width: 100vw;

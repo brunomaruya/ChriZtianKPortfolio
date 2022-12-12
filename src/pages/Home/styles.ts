@@ -42,10 +42,37 @@ export const HomeWrapper = styled.div`
     font-size: 2rem;
     font-weight: 400;
   }
+  @media (max-width: 768px) {
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0.8) 30%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url(${chrisImg});
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    h1 {
+      font-size: 2rem;
+    }
+    h2 {
+      font-size: 3rem;
+    }
+    h3 {
+      font-size: 1rem;
+    }
+    & > div {
+      text-align: center;
+    }
+  }
 `
 export const ButtonsContainer = styled.div`
   display: flex;
   gap: 1rem;
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
 `
 
 export const Button = styled.button`

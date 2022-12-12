@@ -50,13 +50,30 @@ export const Footer = () => {
           <Collumn>
             <ul>
               <li>
-                <InstagramLogo /> christian_ks21
+                <a
+                  href="https://www.instagram.com/christian_ks21/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <InstagramLogo />
+                  <span>christian_ks21</span>
+                </a>
               </li>
               <li>
-                <FacebookLogo /> Christian Kenji
+                <a href="" target="_blank">
+                  <FacebookLogo />
+                  <span>Christian Kenji</span>
+                </a>
               </li>
               <li>
-                <YoutubeLogo /> ChriZtianK
+                <a
+                  href="https://www.youtube.com/@christian_ks21"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <YoutubeLogo />
+                  <span>ChriZtianK</span>
+                </a>
               </li>
             </ul>
           </Collumn>

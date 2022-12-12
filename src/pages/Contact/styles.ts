@@ -11,6 +11,10 @@ export const ContactContainer = styled.section`
   margin: auto;
   margin-top: ${(props) => props.theme['navbar-height']};
   padding-inline: 3rem;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
 `
 export const MessageContainer = styled.div`
   padding-block: 3rem;
@@ -64,7 +68,11 @@ export const MessageContainer = styled.div`
       }
     }
   }
+  @media (max-width: 768px) {
+    margin-bottom: 0;
+  }
 `
+
 export const InformationContainer = styled.div`
   padding: 3rem;
   background: linear-gradient(
@@ -92,5 +100,12 @@ export const InformationContainer = styled.div`
         font-size: 2rem;
       }
     }
+  }
+  @media (max-width: 768px) {
+    width: 100vw;
+    position: relative;
+    left: calc(-50vw + 50%);
+
+    margin-bottom: calc(${(props) => props.theme['footer-height']} + 5rem);
   }
 `

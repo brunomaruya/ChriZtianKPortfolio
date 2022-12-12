@@ -16,6 +16,9 @@ export const AboutContainer = styled.section`
     width: 50%;
     object-fit: cover;
   }
+  @media (max-width: 768px) {
+    margin-bottom: calc(${(props) => props.theme['footer-height']} + 5rem);
+  }
 `
 export const AboutWrapper = styled.div`
   h1 {

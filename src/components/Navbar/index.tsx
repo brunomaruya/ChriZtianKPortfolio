@@ -1,3 +1,4 @@
+import { List, X } from 'phosphor-react'
 import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import {
@@ -8,6 +9,7 @@ import {
 
 export const Navbar = () => {
   const [background, setBackground] = useState('transparent')
+  const [isOpen, setIsOpen] = useState(false)
 
   window.onscroll = () => {
     if (window.scrollY > 0) {
@@ -21,6 +23,13 @@ export const Navbar = () => {
     window.scrollY(0)
   }
 
+  const showNavigation = () => {
+    setIsOpen(true)
+  }
+  const hideNavigation = () => {
+    setIsOpen(false)
+  }
+
   return (
     <NavbarContainerContainer background={background}>
       <NavbarContainer>
@@ -29,7 +38,7 @@ export const Navbar = () => {
             ChriZtianK
           </a>
         </span>
-        <LinksContainer>
+        <LinksContainer style={{ right: isOpen ? 0 : '-100%' }}>
           <li>
             <NavLink
               to={`/`}
@@ -66,7 +75,9 @@ export const Navbar = () => {
               Contact me
             </NavLink>
           </li>
+          <X onClick={hideNavigation} />
         </LinksContainer>
+        <List onClick={showNavigation} />
       </NavbarContainer>
     </NavbarContainerContainer>
   )

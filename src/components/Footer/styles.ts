@@ -9,6 +9,9 @@ export const FooterContainer = styled.footer`
   justify-content: center;
   /* background: ${(props) => props.theme['gray-900']}; */
   background: black;
+  @media (max-width: 768px) {
+    height: calc(${(props) => props.theme['footer-height']} + 5rem);
+  }
 `
 export const FooterWrapper = styled.div`
   width: 100%;
@@ -21,6 +24,42 @@ export const CollumnsContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 768px) {
+    display: block;
+    text-align: center;
+    ul {
+      h1 {
+        display: none;
+      }
+    }
+    ul:first-child {
+      h1 {
+        display: block;
+      }
+      p {
+        display: none;
+      }
+    }
+    ul:nth-child(2) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 1rem;
+    }
+    ul:last-child {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+      li {
+        span {
+          display: none;
+        }
+      }
+    }
+  }
 `
 export const Collumn = styled.ul`
   h1 {

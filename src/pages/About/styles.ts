@@ -16,8 +16,21 @@ export const AboutContainer = styled.section`
     width: 50%;
     object-fit: cover;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 1120px) {
+    min-height: 100%;
+    flex-direction: column;
+
+    gap: 1rem;
     margin-bottom: calc(${(props) => props.theme['footer-height']} + 5rem);
+    margin-top: calc(${(props) => props.theme['navbar-height']} - 2rem);
+    padding-bottom: 0;
+    img {
+      width: 100%;
+      width: 100vw;
+      margin-top: 4rem;
+      position: relative;
+      left: calc(-50vw + 50%);
+    }
   }
 `
 export const AboutWrapper = styled.div`

@@ -60,7 +60,11 @@ export const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="" target="_blank">
+                <a
+                  href="https://www.facebook.com/christian.kenji.10"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <FacebookLogo />
                   <span>Christian Kenji</span>
                 </a>

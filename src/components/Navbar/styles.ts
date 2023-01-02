@@ -15,7 +15,7 @@ export const NavbarContainerContainer = styled.div`
   .not-active {
     color: white;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 1120px) {
     height: calc(${(props) => props.theme['navbar-height']} - 2rem);
     position: fixed;
   }
@@ -37,11 +37,11 @@ export const NavbarContainer = styled.nav`
   span {
     font-weight: 600;
     font-size: 2rem;
-    @media (max-width: 768px) {
+    @media (max-width: 1120px) {
       font-size: 1rem;
     }
   }
-  @media (max-width: 768px) {
+  @media (max-width: 1120px) {
     svg {
       display: block;
       font-size: 2rem;
@@ -61,7 +61,7 @@ export const LinksContainer = styled.ul`
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1120px) {
     width: 50%;
     min-height: 100vh;
     position: absolute;

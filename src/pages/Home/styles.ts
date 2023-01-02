@@ -4,6 +4,9 @@ import chrisImg from '../../../public/assets/christian.jpg'
 export const HomeContainer = styled.section`
   width: 100%;
   padding-bottom: calc(${(props) => props.theme['navbar-height']} + 10rem);
+  @media (max-width: 1120px) {
+    margin-bottom: ${(props) => props.theme['footer-height']};
+  }
 `
 export const HomeWrapper = styled.div`
   min-height: 100vh;
@@ -42,7 +45,7 @@ export const HomeWrapper = styled.div`
     font-size: 2rem;
     font-weight: 400;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 1120px) {
     background: linear-gradient(
         to top,
         rgba(0, 0, 0, 0.8) 0%,
@@ -70,7 +73,7 @@ export const HomeWrapper = styled.div`
 export const ButtonsContainer = styled.div`
   display: flex;
   gap: 1rem;
-  @media (max-width: 768px) {
+  @media (max-width: 1120px) {
     justify-content: center;
   }
 `

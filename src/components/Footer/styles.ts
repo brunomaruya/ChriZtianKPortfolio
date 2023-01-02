@@ -9,7 +9,7 @@ export const FooterContainer = styled.footer`
   justify-content: center;
   /* background: ${(props) => props.theme['gray-900']}; */
   background: black;
-  @media (max-width: 768px) {
+  @media (max-width: 1120px) {
     height: calc(${(props) => props.theme['footer-height']} + 5rem);
   }
 `
@@ -25,12 +25,15 @@ export const CollumnsContainer = styled.div`
   display: flex;
   justify-content: space-between;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1120px) {
     display: block;
     text-align: center;
     ul {
       h1 {
         display: none;
+      }
+      li {
+        font-size: 0.8rem;
       }
     }
     ul:first-child {
@@ -80,11 +83,22 @@ export const Collumn = styled.ul`
   }
   &:last-child {
     ul {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
       li {
-        svg {
-          width: 2rem;
-          height: 2rem;
+        a {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          svg {
+            width: 2rem;
+            height: 2rem;
+          }
         }
+      }
+      @media (max-width: 1120px) {
+        flex-direction: row;
       }
     }
   }

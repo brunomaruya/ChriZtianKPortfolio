@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import chrisImg from '../../../public/assets/lamparina.jpg'
+import chrisImg from '../../../public/assets/4.jpg'
 
 export const ContactContainer = styled.section`
   width: 100%;
@@ -11,7 +11,7 @@ export const ContactContainer = styled.section`
   margin: auto;
   margin-top: ${(props) => props.theme['navbar-height']};
   padding-inline: 3rem;
-  @media (max-width: 768px) {
+  @media (max-width: 1120px) {
     display: flex;
     flex-direction: column;
   }
@@ -52,6 +52,10 @@ export const MessageContainer = styled.div`
           width: 100%;
         }
       }
+
+      @media (max-width: 1120px) {
+        flex-direction: column;
+      }
     }
     & > div {
       width: 100%;
@@ -68,7 +72,7 @@ export const MessageContainer = styled.div`
       }
     }
   }
-  @media (max-width: 768px) {
+  @media (max-width: 1120px) {
     margin-bottom: 0;
   }
 `
@@ -101,7 +105,7 @@ export const InformationContainer = styled.div`
       }
     }
   }
-  @media (max-width: 768px) {
+  @media (max-width: 1120px) {
     width: 100vw;
     position: relative;
     left: calc(-50vw + 50%);

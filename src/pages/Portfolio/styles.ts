@@ -13,8 +13,9 @@ export const PortfolioContainer = styled.section`
     font-size: 3rem;
     font-weight: 500;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 1120px) {
     margin-bottom: calc(${(props) => props.theme['footer-height']} + 5rem);
+    margin-top: calc(${(props) => props.theme['navbar-height']} - 2rem);
   }
 `
 export const FullImage = styled.div`
@@ -37,6 +38,14 @@ export const FullImage = styled.div`
     max-width: 90%;
     max-height: 90%;
   }
+  button:first-of-type {
+    position: absolute;
+    left: 0;
+  }
+  button:last-child {
+    position: absolute;
+    right: 0;
+  }
 `
 export const CloseButton = styled.button`
   position: absolute;
@@ -49,10 +58,13 @@ export const CloseButton = styled.button`
   outline: 0;
 `
 export const ArrowButton = styled.button`
-  margin-inline: 2rem;
+  margin-inline: 10rem;
   background: transparent;
   font-size: 3rem;
   line-height: 0;
   border: 0;
   outline: 0;
+  @media (max-width: 1120px) {
+    margin-inline: 2rem;
+  }
 `

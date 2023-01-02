@@ -3,31 +3,35 @@ import {
   CloseButton,
   FullImage,
   PortfolioContainer,
-} from './styles'
-import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry'
-import images from '../../data/images.json'
-import { useState } from 'react'
-import { ArrowLeft, ArrowRight, X } from 'phosphor-react'
+} from './styles';
+import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
+import PropTypes from 'prop-types';
+import images from '../../data/images.json';
+import { useState } from 'react';
+import { ArrowLeft, ArrowRight, X } from 'phosphor-react';
 
 export const Portfolio = () => {
-  const [data, setData] = useState({ image: '', id: 0 })
+  const [data, setData] = useState({ image: '', id: 0 });
 
   const viewImage = (image: string, id: number) => {
-    document.body.style.overflow = 'hidden'
-    setData({ image, id })
-  }
+    document.body.style.overflow = 'hidden';
+    setData({ image, id });
+  };
 
   const imgAction = (action: string) => {
     if (action === 'nextImg' && data.id <= images.length) {
-      setData({ image: images[data.id].imgUrl, id: images[data.id].id })
+      setData({ image: images[data.id].imgUrl, id: images[data.id].id });
     } else if (action === 'prevImg') {
-      setData({ image: images[data.id - 2].imgUrl, id: images[data.id - 2].id })
-      console.log(data.id)
+      setData({
+        image: images[data.id - 2].imgUrl,
+        id: images[data.id - 2].id,
+      });
+      console.log(data.id);
     } else if (action === 'close') {
-      document.body.style.overflow = 'visible'
-      setData({ image: '', id: 0 })
+      document.body.style.overflow = 'visible';
+      setData({ image: '', id: 0 });
     }
-  }
+  };
   return (
     <PortfolioContainer>
       <h1>Portfolio</h1>
@@ -45,6 +49,7 @@ export const Portfolio = () => {
           </CloseButton>
         </FullImage>
       )}
+
       <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
         <Masonry gutter={16}>
           {images.map((image) => (
@@ -59,5 +64,5 @@ export const Portfolio = () => {
         </Masonry>
       </ResponsiveMasonry>
     </PortfolioContainer>
-  )
-}
+  );
+};

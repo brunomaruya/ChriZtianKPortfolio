@@ -9,6 +9,9 @@ export const FooterContainer = styled.footer`
   justify-content: center;
   /* background: ${(props) => props.theme['gray-900']}; */
   background: black;
+  @media (max-width: 1120px) {
+    height: calc(${(props) => props.theme['footer-height']} + 5rem);
+  }
 `
 export const FooterWrapper = styled.div`
   width: 100%;
@@ -21,6 +24,45 @@ export const CollumnsContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 1120px) {
+    display: block;
+    text-align: center;
+    ul {
+      h1 {
+        display: none;
+      }
+      li {
+        font-size: 0.8rem;
+      }
+    }
+    ul:first-child {
+      h1 {
+        display: block;
+      }
+      p {
+        display: none;
+      }
+    }
+    ul:nth-child(2) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 1rem;
+    }
+    ul:last-child {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+      li {
+        span {
+          display: none;
+        }
+      }
+    }
+  }
 `
 export const Collumn = styled.ul`
   h1 {
@@ -41,11 +83,22 @@ export const Collumn = styled.ul`
   }
   &:last-child {
     ul {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
       li {
-        svg {
-          width: 2rem;
-          height: 2rem;
+        a {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          svg {
+            width: 2rem;
+            height: 2rem;
+          }
         }
+      }
+      @media (max-width: 1120px) {
+        flex-direction: row;
       }
     }
   }

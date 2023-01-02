@@ -1,3 +1,4 @@
+import { List, X } from 'phosphor-react'
 import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import {
@@ -8,6 +9,8 @@ import {
 
 export const Navbar = () => {
   const [background, setBackground] = useState('transparent')
+  const [isOpen, setIsOpen] = useState(false)
+
   window.onscroll = () => {
     if (window.scrollY > 0) {
       setBackground(`#121214`)
@@ -16,17 +19,31 @@ export const Navbar = () => {
     }
   }
 
+  const goUp = () => {
+    window.scrollY(0)
+  }
+
+  const showNavigation = () => {
+    setIsOpen(true)
+  }
+  const hideNavigation = () => {
+    setIsOpen(false)
+  }
+
   return (
     <NavbarContainerContainer background={background}>
       <NavbarContainer>
         <span>
-          <a href="/">ChriZtianK</a>
+          <a href="/" onClick={() => (window.scrollY = 0)}>
+            ChriZtianK
+          </a>
         </span>
-        <LinksContainer>
+        <LinksContainer style={{ right: isOpen ? 0 : '-100%' }}>
           <li>
             <NavLink
               to={`/`}
               className={({ isActive }) => (isActive ? 'active' : '')}
+              onClick={goUp}
             >
               Home
             </NavLink>
@@ -35,6 +52,7 @@ export const Navbar = () => {
             <NavLink
               to={`/about`}
               className={({ isActive }) => (isActive ? 'active' : '')}
+              onClick={goUp}
             >
               About
             </NavLink>
@@ -43,6 +61,7 @@ export const Navbar = () => {
             <NavLink
               to={`/portfolio`}
               className={({ isActive }) => (isActive ? 'active' : '')}
+              onClick={goUp}
             >
               Portfolio
             </NavLink>
@@ -51,11 +70,14 @@ export const Navbar = () => {
             <NavLink
               to={`/contact`}
               className={({ isActive }) => (isActive ? 'active' : '')}
+              onClick={goUp}
             >
               Contact me
             </NavLink>
           </li>
+          <X onClick={hideNavigation} />
         </LinksContainer>
+        <List onClick={showNavigation} />
       </NavbarContainer>
     </NavbarContainerContainer>
   )

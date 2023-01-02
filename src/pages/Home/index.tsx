@@ -7,6 +7,7 @@ import {
   LastWorksWrapper,
 } from './styles'
 import imgData from '../../data/images.json'
+
 export const Home = () => {
   return (
     <HomeContainer>
@@ -28,9 +29,11 @@ export const Home = () => {
       <LastWorksContainer>
         <h1>Last Works</h1>
         <LastWorksWrapper>
-          {imgData.map((img) => {
-            return <img key={img.id} src={img.imgUrl} />
-          })}
+          {imgData
+            .filter((img) => img.id < 7)
+            .map((img) => {
+              return <img key={img.id} src={img.imgUrl} />
+            })}
         </LastWorksWrapper>
       </LastWorksContainer>
     </HomeContainer>

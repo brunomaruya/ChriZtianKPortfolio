@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const PortfolioContainer = styled.section`
   width: 100%;
@@ -17,7 +17,7 @@ export const PortfolioContainer = styled.section`
     margin-bottom: calc(${(props) => props.theme['footer-height']} + 5rem);
     margin-top: calc(${(props) => props.theme['navbar-height']} - 2rem);
   }
-`
+`;
 export const FullImage = styled.div`
   width: 100vw;
   height: 100vh;
@@ -46,7 +46,7 @@ export const FullImage = styled.div`
     position: absolute;
     right: 0;
   }
-`
+`;
 export const CloseButton = styled.button`
   position: absolute;
   top: 0;
@@ -56,7 +56,7 @@ export const CloseButton = styled.button`
   line-height: 0;
   border: 0;
   outline: 0;
-`
+`;
 export const ArrowButton = styled.button`
   margin-inline: 10rem;
   background: transparent;
@@ -67,4 +67,4 @@ export const ArrowButton = styled.button`
   @media (max-width: 1120px) {
     margin-inline: 2rem;
   }
-`
+`;

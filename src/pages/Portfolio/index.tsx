@@ -41,12 +41,12 @@ export const Portfolio = () => {
             <ArrowLeft />
           </ArrowButton>
           <img src={data.image} alt="" />
-          <ArrowButton onClick={() => imgAction('nextImg')}>
-            <ArrowRight />
-          </ArrowButton>
           <CloseButton onClick={() => imgAction('close')}>
             <X />
           </CloseButton>
+          <ArrowButton onClick={() => imgAction('nextImg')}>
+            <ArrowRight />
+          </ArrowButton>
         </FullImage>
       )}
 

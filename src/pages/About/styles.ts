@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const AboutContainer = styled.section`
   width: 100%;
@@ -21,7 +21,7 @@ export const AboutContainer = styled.section`
     flex-direction: column;
 
     gap: 1rem;
-    margin-bottom: calc(${(props) => props.theme['footer-height']} + 5rem);
+    margin-bottom: calc(${(props) => props.theme['footer-height']} + 4rem);
     margin-top: calc(${(props) => props.theme['navbar-height']} - 2rem);
     padding-bottom: 0;
     img {
@@ -32,11 +32,11 @@ export const AboutContainer = styled.section`
       left: calc(-50vw + 50%);
     }
   }
-`
+`;
 export const AboutWrapper = styled.div`
   h1 {
     margin-bottom: 3rem;
     font-size: 3rem;
     font-weight: 500;
   }
-`
+`;

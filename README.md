@@ -1,8 +1,5 @@
 # ChirZtianKPortfolio
-<<<<<<< HEAD
-=======
 
->>>>>>> staging
-![](https://github.com/brunomaruya/ChirZtianKPortfolio/blob/staging/gifs/Home.gif)
+![](https://github.com/brunomaruya/ChirZtianKPortfolio/blob/staging/gifs/Desktop.gif)
 
-![](https://github.com/brunomaruya/ChirZtianKPortfolio/blob/staging/gifs/Preview.gif)
+![](https://github.com/brunomaruya/ChirZtianKPortfolio/blob/staging/gifs/Mobile.gif)

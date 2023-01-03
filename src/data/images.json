@@ -1,7 +1,6 @@
 [
   {
     "id": 1,
-<<<<<<< HEAD
     "imgUrl": "../../public/assets/carros.jpg"
   },
   {
@@ -22,8 +21,6 @@
   },
   {
     "id": 6,
-    "imgUrl": "../../public/assets/papel.jpg"
-=======
     "imgUrl": "../../public/assets/1.jpg"
   },
   {
@@ -69,6 +66,5 @@
   {
     "id": 12,
     "imgUrl": "../../public/assets/12.jpg"
->>>>>>> staging
   }
 ]

@@ -7,7 +7,7 @@
  
 <div align="center">
   <div style="display: flex; ">  
-    <img height="auto" align="top" width="70%" src="https://github.com/brunomaruya/ChirZtianKPortfolio/blob/staging/gifs/Desktop.gif" />
-    <img src="https://github.com/brunomaruya/ChirZtianKPortfolio/blob/staging/gifs/Mobile.gif" />
+    <img height="395px" align="top" width="70%" src="https://github.com/brunomaruya/ChirZtianKPortfolio/blob/staging/gifs/Desktop.gif" />
+    <img height="395px" src="https://github.com/brunomaruya/ChirZtianKPortfolio/blob/staging/gifs/Mobile.gif" />
   </div>
 </div>

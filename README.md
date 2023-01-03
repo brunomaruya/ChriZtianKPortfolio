@@ -1,13 +1,17 @@
-# ChirZtianKPortfolio
+# 📸 ChirZtianKPortfolio
 
+A portfolio website made for my friend who is a photographer 📷
 <!-- ![](https://github.com/brunomaruya/ChirZtianKPortfolio/blob/staging/gifs/Desktop.gif)
 
 ![](https://github.com/brunomaruya/ChirZtianKPortfolio/blob/staging/gifs/Mobile.gif)
  -->
  
-<div align="center">
+<div >
   <div style="display: flex; ">  
-    <img height="395px" align="top" width="70%" src="https://github.com/brunomaruya/ChirZtianKPortfolio/blob/staging/gifs/Desktop.gif" />
-    <img height="395px" src="https://github.com/brunomaruya/ChirZtianKPortfolio/blob/staging/gifs/Mobile.gif" />
+    <img  align="top" src="https://github.com/brunomaruya/ChirZtianKPortfolio/blob/staging/gifs/Desktop.gif" />
+    <img  src="https://github.com/brunomaruya/ChirZtianKPortfolio/blob/staging/gifs/Mobile.gif" />
   </div>
 </div>
+
+# Features
+-  React 

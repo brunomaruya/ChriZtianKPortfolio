@@ -1,34 +1,30 @@
-import { List, X } from 'phosphor-react'
-import { useState } from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { List, X } from 'phosphor-react';
+import { useState } from 'react';
+import { Link, NavLink } from 'react-router-dom';
 import {
   LinksContainer,
   NavbarContainer,
   NavbarContainerContainer,
-} from './styles'
+} from './styles';
 
 export const Navbar = () => {
-  const [background, setBackground] = useState('transparent')
-  const [isOpen, setIsOpen] = useState(false)
+  const [background, setBackground] = useState('transparent');
+  const [isOpen, setIsOpen] = useState(false);
 
   window.onscroll = () => {
     if (window.scrollY > 0) {
-      setBackground(`#121214`)
+      setBackground(`#121214`);
     } else {
-      setBackground('transparent')
+      setBackground('transparent');
     }
-  }
-
-  const goUp = () => {
-    window.scrollY(0)
-  }
+  };
 
   const showNavigation = () => {
-    setIsOpen(true)
-  }
+    setIsOpen(true);
+  };
   const hideNavigation = () => {
-    setIsOpen(false)
-  }
+    setIsOpen(false);
+  };
 
   return (
     <NavbarContainerContainer background={background}>
@@ -43,7 +39,6 @@ export const Navbar = () => {
             <NavLink
               to={`/`}
               className={({ isActive }) => (isActive ? 'active' : '')}
-              onClick={goUp}
             >
               Home
             </NavLink>
@@ -52,7 +47,6 @@ export const Navbar = () => {
             <NavLink
               to={`/about`}
               className={({ isActive }) => (isActive ? 'active' : '')}
-              onClick={goUp}
             >
               About
             </NavLink>
@@ -61,7 +55,6 @@ export const Navbar = () => {
             <NavLink
               to={`/portfolio`}
               className={({ isActive }) => (isActive ? 'active' : '')}
-              onClick={goUp}
             >
               Portfolio
             </NavLink>
@@ -70,7 +63,6 @@ export const Navbar = () => {
             <NavLink
               to={`/contact`}
               className={({ isActive }) => (isActive ? 'active' : '')}
-              onClick={goUp}
             >
               Contact me
             </NavLink>
@@ -80,5 +72,5 @@ export const Navbar = () => {
         <List onClick={showNavigation} />
       </NavbarContainer>
     </NavbarContainerContainer>
-  )
-}
+  );
+};

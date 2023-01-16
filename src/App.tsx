@@ -17,10 +17,12 @@ import { Portfolio } from './pages/Portfolio';
 
 import { AppContainer, GlobaStyles } from './styles/GlobalStyles';
 import { defaultTheme } from './styles/themes/default';
+import ScrollToTop from './utils/ScrollToTop';
 function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <BrowserRouter>
+        <ScrollToTop />
         <AppContainer>
           <GlobaStyles />
 

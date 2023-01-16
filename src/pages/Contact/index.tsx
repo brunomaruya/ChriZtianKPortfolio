@@ -1,44 +1,40 @@
-import { EnvelopeSimple, FacebookLogo, InstagramLogo } from 'phosphor-react'
-import React, { useState } from 'react'
+import { EnvelopeSimple, FacebookLogo, InstagramLogo } from 'phosphor-react';
+import React, { FormEvent, useRef, useState } from 'react';
 
-import emailjs from '@emailjs/browser'
+import emailjs from '@emailjs/browser';
 
 import {
   ContactContainer,
   InformationContainer,
   MessageContainer,
-} from './styles'
+} from './styles';
 
 export const Contact = () => {
   // const form = useRef()
-  const form = React.useRef<HTMLFormElement>()
-  const [result, showResult] = useState(false)
+  const form = useRef<HTMLFormElement>(null);
+  const [result, showResult] = useState(false);
+  const SERVICE_ID = 'service_6jq2fq3';
+  const TEMPLATE_ID = 'template_pvto8xr';
+  const PUBLIC_ID = 'kDfYgecsyWDLPLAMR';
 
-  const sendEmail = (e: React.ChangeEvent<HTMLInputElement>) => {
-    e.preventDefault()
+  const sendEmail = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
 
-    emailjs
-      .sendForm(
-        'service_9kq9qyb',
-        'template_pvto8xr',
-        form.current,
-        'kn2KcngS9dnQUjQNb',
-      )
-      .then(
-        (result) => {
-          console.log(result.text)
-        },
-        (error) => {
-          console.log(error.text)
-        },
-      )
-    e.target.reset()
-    showResult(true)
-  }
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.currentTarget, PUBLIC_ID).then(
+      (result) => {
+        console.log(result.text);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
+    e.currentTarget.reset();
+    showResult(true);
+  };
 
   setTimeout(() => {
-    showResult(false)
-  }, 100000)
+    showResult(false);
+  }, 100000);
 
   return (
     <ContactContainer>
@@ -103,5 +99,5 @@ export const Contact = () => {
         </ul>
       </InformationContainer>
     </ContactContainer>
-  )
-}
+  );
+};

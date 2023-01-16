@@ -1,4 +1,10 @@
-import styled, { createGlobalStyle } from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components';
+
+type themeProps = {
+  theme: {
+    white: 'string';
+  };
+};
 
 export const GlobaStyles = createGlobalStyle`
   *{
@@ -12,12 +18,12 @@ export const GlobaStyles = createGlobalStyle`
   }
   a{
     text-decoration: none;
-    color: ${(props) => props.theme.white}
+    color: ${(props: themeProps) => props.theme.white}
   }
   li{
     list-style: none;
   }
-`
+`;
 export const AppContainer = styled.section`
   min-height: 100vh;
   width: 100%;
@@ -26,4 +32,4 @@ export const AppContainer = styled.section`
   /* justify-content: center; */
   position: relative;
   background: ${(props) => props.theme['gray-900']};
-`
+`;

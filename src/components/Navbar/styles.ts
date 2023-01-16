@@ -1,4 +1,9 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
+
+type props = {
+  background: string;
+};
+
 export const NavbarContainerContainer = styled.div`
   height: ${(props) => props.theme['navbar-height']};
   width: 100%;
@@ -7,7 +12,7 @@ export const NavbarContainerContainer = styled.div`
   align-items: center;
   position: fixed;
   z-index: 2;
-  background: ${(props) => props.background || 'transparent'};
+  background: ${(props: props) => props.background || 'transparent'};
   transition: background-color 0.5s;
   .active {
     color: ${(props) => props.theme.blue};
@@ -19,7 +24,7 @@ export const NavbarContainerContainer = styled.div`
     height: calc(${(props) => props.theme['navbar-height']} - 2rem);
     position: fixed;
   }
-`
+`;
 export const NavbarContainer = styled.nav`
   display: flex;
   justify-content: space-between;
@@ -47,7 +52,7 @@ export const NavbarContainer = styled.nav`
       font-size: 2rem;
     }
   }
-`
+`;
 export const LinksContainer = styled.ul`
   display: flex;
   gap: 2rem;
@@ -86,4 +91,4 @@ export const LinksContainer = styled.ul`
       font-size: 2rem;
     }
   }
-`
+`;

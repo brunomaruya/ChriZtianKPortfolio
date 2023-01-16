@@ -11,10 +11,10 @@ import { Footer } from './components/Footer';
 import { Navbar } from './components/Navbar';
 import { About } from './pages/About';
 import { Contact } from './pages/Contact';
-import { ErrorPage } from './pages/ErrorPage/indes';
+
 import { Home } from './pages/Home';
 import { Portfolio } from './pages/Portfolio';
-import { Portfolio2 } from './pages/Portfolio2';
+
 import { AppContainer, GlobaStyles } from './styles/GlobalStyles';
 import { defaultTheme } from './styles/themes/default';
 function App() {

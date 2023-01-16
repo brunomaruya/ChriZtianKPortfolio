@@ -51,7 +51,7 @@ export const Portfolio = () => {
       )}
 
       <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
-        <Masonry gutter={16}>
+        <Masonry gutter="16px">
           {images.map((image) => (
             <img
               key={image.id}

@@ -1,5 +1,8 @@
-# 📸 ChirZtianKPortfolio
-[Demo](chriztiank.vercel.app)
+<h1 align="center">
+  📸 ChirZtianKPortfolio<br/>
+  <a href="https://chriztiank.vercel.app/" target="_blank">chriztiank.vercel.app</a>
+</h1>
+
 
 A portfolio website made for my photographer friend 📷
 <!-- ![](https://github.com/brunomaruya/ChirZtianKPortfolio/blob/staging/gifs/Desktop.gif)

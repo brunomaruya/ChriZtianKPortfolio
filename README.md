@@ -21,6 +21,7 @@ A portfolio website made for my photographer friend 📷
 -  React 
 - Styled Components
 - Firebase Storage
+- emailjs
 - VSCode
 - Vercel
 

@@ -14,10 +14,6 @@ import {
 export const Contact = () => {
   const form = useRef<HTMLFormElement>(null);
 
-  const SERVICE_ID = 'service_6jq2fq3';
-  const TEMPLATE_ID = 'template_pvto8xr';
-  const PUBLIC_ID = 'kDfYgecsyWDLPLAMR';
-
   const notify = () =>
     toast('Your message has been successfully sent!', {
       position: 'bottom-center',
@@ -33,14 +29,21 @@ export const Contact = () => {
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.currentTarget, PUBLIC_ID).then(
-      (result) => {
-        console.log(result.text);
-      },
-      (error) => {
-        console.log(error.text);
-      }
-    );
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
+        e.currentTarget,
+        import.meta.env.VITE_PUBLIC_ID
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
     e.currentTarget.reset();
     notify();
     console.log('working');

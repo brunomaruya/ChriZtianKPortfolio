@@ -43,6 +43,7 @@ export const Contact = () => {
     );
     e.currentTarget.reset();
     notify();
+    console.log('working');
   };
   return (
     <ContactContainer>

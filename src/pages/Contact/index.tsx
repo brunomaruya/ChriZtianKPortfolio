@@ -1,5 +1,7 @@
 import { EnvelopeSimple, FacebookLogo, InstagramLogo } from 'phosphor-react';
 import React, { FormEvent, useRef, useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import emailjs from '@emailjs/browser';
 
@@ -10,12 +12,23 @@ import {
 } from './styles';
 
 export const Contact = () => {
-  // const form = useRef()
   const form = useRef<HTMLFormElement>(null);
-  const [result, showResult] = useState(false);
+
   const SERVICE_ID = 'service_6jq2fq3';
   const TEMPLATE_ID = 'template_pvto8xr';
   const PUBLIC_ID = 'kDfYgecsyWDLPLAMR';
+
+  const notify = () =>
+    toast('Your message has been successfully sent!', {
+      position: 'bottom-center',
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: 'dark',
+    });
 
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -29,13 +42,8 @@ export const Contact = () => {
       }
     );
     e.currentTarget.reset();
-    showResult(true);
+    notify();
   };
-
-  setTimeout(() => {
-    showResult(false);
-  }, 100000);
-
   return (
     <ContactContainer>
       <MessageContainer>
@@ -49,6 +57,7 @@ export const Contact = () => {
                 id="name"
                 name="from_name"
                 placeholder="Enter Your Name"
+                required
               />
             </div>
             <div>
@@ -58,6 +67,7 @@ export const Contact = () => {
                 id="email"
                 name="email"
                 placeholder="Enter your Email"
+                required
               />
             </div>
           </div>
@@ -70,17 +80,13 @@ export const Contact = () => {
               cols={30}
               rows={10}
               placeholder="Enter Your Message"
+              required
             ></textarea>
-            {result ? (
-              <p>
-                Your message has been successfully sent. I will contact you
-                soon.
-              </p>
-            ) : null}
           </div>
           <button type="submit">Send Message</button>
         </form>
       </MessageContainer>
+
       <InformationContainer>
         <h1>Contact Information</h1>
         <ul>
@@ -98,6 +104,18 @@ export const Contact = () => {
           </li>
         </ul>
       </InformationContainer>
+      <ToastContainer
+        position="bottom-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
     </ContactContainer>
   );
 };

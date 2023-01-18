@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import chrisImg from '../../../public/assets/4.jpg'
+import styled from 'styled-components';
+import chrisImg from '../../../public/assets/4.jpg';
 
 export const ContactContainer = styled.section`
   width: 100%;
@@ -15,7 +15,7 @@ export const ContactContainer = styled.section`
     display: flex;
     flex-direction: column;
   }
-`
+`;
 export const MessageContainer = styled.div`
   padding-block: 3rem;
   margin-bottom: ${(props) => props.theme['footer-height']};
@@ -61,7 +61,7 @@ export const MessageContainer = styled.div`
       width: 100%;
       margin-bottom: 4rem;
     }
-    button {
+    & > button {
       padding: 1rem 3rem;
       padding-bottom: ${(props) => props.theme['footer-heihgt']};
       background: ${(props) => props.theme.blue};
@@ -72,10 +72,11 @@ export const MessageContainer = styled.div`
       }
     }
   }
+
   @media (max-width: 1120px) {
     margin-bottom: 0;
   }
-`
+`;
 
 export const InformationContainer = styled.div`
   padding: 3rem;
@@ -112,4 +113,4 @@ export const InformationContainer = styled.div`
 
     margin-bottom: calc(${(props) => props.theme['footer-height']} + 5rem);
   }
-`
+`;

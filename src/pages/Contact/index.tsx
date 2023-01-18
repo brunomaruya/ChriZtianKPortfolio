@@ -77,7 +77,7 @@ export const Contact = () => {
             <label htmlFor="message">Your Message</label>
             <textarea
               name="message"
-              id=""
+              id="message"
               cols={30}
               rows={10}
               placeholder="Enter Your Message"

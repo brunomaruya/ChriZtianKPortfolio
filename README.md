@@ -1,6 +1,10 @@
-# 📸 ChirZtianKPortfolio
+<h1 align="center">
+  📸 ChirZtianKPortfolio<br/>
+  <a href="https://chriztiank.vercel.app/" target="_blank">chriztiank.vercel.app</a>
+</h1>
 
-A portfolio website made for my friend who is a photographer 📷
+
+A portfolio website made for my photographer friend 📷
 <!-- ![](https://github.com/brunomaruya/ChirZtianKPortfolio/blob/staging/gifs/Desktop.gif)
 
 ![](https://github.com/brunomaruya/ChirZtianKPortfolio/blob/staging/gifs/Mobile.gif)
@@ -13,5 +17,14 @@ A portfolio website made for my friend who is a photographer 📷
   </div>
 </div>
 
-# Features
+## Built with
 -  React 
+- Styled Components
+- Firebase Storage
+- emailjs
+- VSCode
+- Vercel
+
+## Features 
+- Fully Responsive
+- Multi-Page Layout

@@ -79,7 +79,7 @@ export const MessageContainer = styled.div`
 `;
 
 export const InformationContainer = styled.div`
-  padding: 3rem;
+  padding: 3rem 3rem 5rem;
   background: linear-gradient(
       to right,
       rgba(0, 0, 0, 0.6) 0%,
@@ -111,6 +111,6 @@ export const InformationContainer = styled.div`
     position: relative;
     left: calc(-50vw + 50%);
 
-    margin-bottom: calc(${(props) => props.theme['footer-height']} + 5rem);
+    margin-bottom: calc(${(props) => props.theme['footer-height']});
   }
 `;

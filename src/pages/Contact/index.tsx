@@ -51,7 +51,7 @@ export const Contact = () => {
   return (
     <ContactContainer>
       <MessageContainer>
-        <h1>Send me a Message</h1>
+        <h1>Send me some Message</h1>
         <form ref={form} onSubmit={sendEmail}>
           <div>
             <div>

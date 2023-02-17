@@ -39,6 +39,7 @@ export const Navbar = () => {
             <NavLink
               to={`/`}
               className={({ isActive }) => (isActive ? 'active' : '')}
+              onClick={hideNavigation}
             >
               Home
             </NavLink>
@@ -47,6 +48,7 @@ export const Navbar = () => {
             <NavLink
               to={`/about`}
               className={({ isActive }) => (isActive ? 'active' : '')}
+              onClick={hideNavigation}
             >
               About
             </NavLink>
@@ -55,6 +57,7 @@ export const Navbar = () => {
             <NavLink
               to={`/portfolio`}
               className={({ isActive }) => (isActive ? 'active' : '')}
+              onClick={hideNavigation}
             >
               Portfolio
             </NavLink>
@@ -63,6 +66,7 @@ export const Navbar = () => {
             <NavLink
               to={`/contact`}
               className={({ isActive }) => (isActive ? 'active' : '')}
+              onClick={hideNavigation}
             >
               Contact me
             </NavLink>

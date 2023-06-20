@@ -2,7 +2,7 @@ import { AboutContainer, AboutWrapper } from './styles';
 import img from '../../../public/assets/Christian2.jpg';
 
 export const About = () => {
-  //update2
+  //update3
   return (
     <AboutContainer>
       <AboutWrapper>

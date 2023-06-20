@@ -1,7 +1,8 @@
-import { AboutContainer, AboutWrapper } from './styles'
-import img from '../../../public/assets/Christian2.jpg'
+import { AboutContainer, AboutWrapper } from './styles';
+import img from '../../../public/assets/Christian2.jpg';
 
 export const About = () => {
+  //update
   return (
     <AboutContainer>
       <AboutWrapper>
@@ -14,5 +15,5 @@ export const About = () => {
       </AboutWrapper>
       <img src={img} alt="" />
     </AboutContainer>
-  )
-}
+  );
+};

@@ -15,6 +15,7 @@ export const AboutContainer = styled.section`
   padding-bottom: ${(props) => props.theme['footer-height']};
   /* padding-bottom: 50rem; */
   img {
+    filter: brightness(0.8);
     flex: 1;
     height: 100%;
     width: 100%;
@@ -41,14 +42,13 @@ export const AboutContainer = styled.section`
 `;
 export const AboutWrapper = styled.div`
   position: absolute;
+  top: 12rem;
+  left: 50rem;
   flex: 1;
-  margin-top: 7rem;
+  margin-top: 0rem;
   margin-inline: 10rem;
   h1 {
-    color: black;
-    position: absolute;
-    left: -7rem;
-    /* text-align: center; */
+    text-align: center;
     margin-bottom: 3rem;
     font-size: 4rem;
     font-weight: 500;
@@ -56,19 +56,13 @@ export const AboutWrapper = styled.div`
     /* width: 200px; */
   }
   p {
+    filter: drop-shadow(0px 10px 7px #000);
+
     top: 20rem;
     color: white;
     text-align: center;
     margin-bottom: 1rem;
     font-size: 2rem;
     width: 30rem;
-  }
-  p:first-of-type {
-    position: absolute;
-    left: -7rem;
-  }
-  p:last-of-type {
-    position: absolute;
-    left: 40rem;
   }
 `;

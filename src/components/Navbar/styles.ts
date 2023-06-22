@@ -14,6 +14,10 @@ export const NavbarContainerContainer = styled.div`
   z-index: 2;
   background: ${(props: props) => props.background || 'transparent'};
   transition: background-color 0.5s;
+
+  span a {
+    font-family: PlayFair;
+  }
   .active {
     color: ${(props) => props.theme.blue};
   }

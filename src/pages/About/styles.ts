@@ -1,11 +1,13 @@
 import styled from 'styled-components';
 
 export const AboutContainer = styled.section`
+  position: relative;
   width: 100%;
   min-height: 100vh;
   max-width: ${(props) => props.theme['max-width']};
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   gap: 10rem;
   padding: 0 3rem 3rem;
   margin: auto;
@@ -13,8 +15,12 @@ export const AboutContainer = styled.section`
   padding-bottom: ${(props) => props.theme['footer-height']};
   /* padding-bottom: 50rem; */
   img {
-    width: 50%;
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    max-height: 80rem;
     object-fit: cover;
+    object-position: bottom;
   }
   @media (max-width: 1120px) {
     min-height: 100%;
@@ -34,9 +40,35 @@ export const AboutContainer = styled.section`
   }
 `;
 export const AboutWrapper = styled.div`
+  position: absolute;
+  flex: 1;
+  margin-top: 7rem;
+  margin-inline: 10rem;
   h1 {
+    color: black;
+    position: absolute;
+    left: -7rem;
+    /* text-align: center; */
     margin-bottom: 3rem;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 500;
+
+    /* width: 200px; */
+  }
+  p {
+    top: 20rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    width: 30rem;
+  }
+  p:first-of-type {
+    position: absolute;
+    left: -7rem;
+  }
+  p:last-of-type {
+    position: absolute;
+    left: 40rem;
   }
 `;

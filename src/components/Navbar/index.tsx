@@ -50,7 +50,7 @@ export const Navbar = () => {
               className={({ isActive }) => (isActive ? 'active' : '')}
               onClick={hideNavigation}
             >
-              About
+              About me
             </NavLink>
           </li>
           <li>
